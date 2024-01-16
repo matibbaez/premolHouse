@@ -51,10 +51,6 @@
     transition: 0.5s ease;
     cursor: pointer;
 }
-.social-link i img:hover{
-    background-color: rgba(238,224,208);
-    border-radius: 50px;
-}
 /* @media screen and (max-width:420px){
     .social-link i img{
         width: 20px;
