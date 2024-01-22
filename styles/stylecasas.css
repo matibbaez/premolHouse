@@ -561,6 +561,14 @@ section.nosotros h2 {
     font-weight: 800;
 }
 
+.container p{
+    font-size: 1.1rem;
+}
+
+.container h6{
+    font-size: 1.3rem;
+}
+
 @media (max-width: 800px){
 
     /* FAQ */
@@ -648,4 +656,17 @@ section.nosotros h2 {
         font-weight: 800;
     }
 
+    .container p{
+        font-size: 1.1rem;
+    }
+    
+    .container h6{
+        font-size: 1.1rem;
+    }
+
+}
+
+h6, h6 {
+    font-size: 1rem;
+    font-weight: 800;
 }
