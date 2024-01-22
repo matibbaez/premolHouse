@@ -355,7 +355,7 @@
 }
 
 .question h3 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -368,7 +368,7 @@
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .faq.active .answer {
