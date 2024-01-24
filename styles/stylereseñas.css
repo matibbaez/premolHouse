@@ -740,6 +740,19 @@
 .container-time ul li:nth-child(4) {
 	margin-bottom: 0;
 }
+
+.container-time ul li img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+.container-time ul li a {
+    display: block; /* Para asegurar que la imagen y el enlace ocupen líneas separadas */
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+
 .container-time ul li .circle {
 	position: absolute;
 	width: 20px;
@@ -865,3 +878,69 @@
 		left: -20px;
 	}
 }
+
+
+
+
+.video-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.video-container {
+    position: relative;
+    max-width: 800px;
+    max-height: 80vh;
+    margin: 20px;
+}
+
+#popupVideo {
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container-time ul li {
+    position: relative;
+}
+
+.show-video {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.close-popup-btn {
+    padding: 10px;
+    background-color: #fff;
+    color: #ff7e4b;
+    border: 2px solid #ff7e4b;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.close-popup-btn:hover {
+    background-color: #ff7e4b;
+    color: #fff;
+}
+
+/* Ajusta los estilos según tus preferencias */
