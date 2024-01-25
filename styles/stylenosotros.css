@@ -358,59 +358,6 @@
 
 /* footer */
 
-/* FAQ */
-
-.sectionFaq {
-    min-height: 100vh;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title {
-    font-size: 3rem;
-    margin: 1rem 0rem;
-    margin-top: 4.5rem;
-    font-weight: 700;
-}
-
-.faq {
-    max-width: 700px;
-    min-width: 700px;
-    margin-top: 2rem;
-    border-bottom: 2px solid #121212;
-    cursor: pointer;
-}
-
-.question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.question h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease;
-}
-
-.answer p {
-    padding-top: 1rem;
-    line-height: 1.6;
-    font-size: 1.4rem;
-}
-
-.faq.active .answer {
-    max-height: 300px;
-}
-
 /* Carrusel */
 
 .carousel{
