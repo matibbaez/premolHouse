@@ -284,6 +284,7 @@
     color: white;
 }
 
+
 /* footer */
 
 #footer{
@@ -426,6 +427,12 @@
 #btn3 button:hover{
     background-color: #ff7e4b;
     color: white;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-weight: 700;
 }
 
 @media (max-width: 800px){
