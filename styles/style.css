@@ -507,4 +507,11 @@
         font-size: 1rem;
     }
 
+    #detallesModal .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 2.5rem;
+        pointer-events: none;
+    }
+
 }
