@@ -411,6 +411,23 @@
     max-height: 300px;
 }
 
+#btn3 button{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff7e4b;
+    border-radius: 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: #ff7e4b;
+    font-weight: 700;
+}
+
+#btn3 button:hover{
+    background-color: #ff7e4b;
+    color: white;
+}
+
 @media (max-width: 800px){
 
     /* FAQ */

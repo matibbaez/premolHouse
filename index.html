@@ -77,7 +77,6 @@
            </div> 
           </nav>
 
-
           <div class="content">
             <h1>Construcción de Casas Prefabricadas</h1>
             <h2>Tu casa en 60 días | Wood Frame</h2>
@@ -91,7 +90,7 @@
     <!-- card1 -->
     <div id="casas" class="container">
         <h1 class="text-center" style="padding-top: 30px;">TIPOS DE CASAS</h1>
-        <p class="title-secondary">Contamos con modelos increíbles para que tu sueño de tener tu propia casa de haga realidad.</h1>
+        <p class="title-secondary">Contamos con modelos increíbles para que tu sueño de tener tu propia casa de haga realidad.</p>
         <div class="row" style="margin-top: 30px;">
             <div class="col-md-4 py-3 py-md-0">
                 <div class="card">
@@ -100,7 +99,9 @@
                         <h5 class="card-titel text-center">Modelo Americana</h5>
                         <p class="text-center">Las casa americanas tienen un estilo a dos aguas. 
                             Un modelo que brinda calidez y un hermoso estilo hogareño.</p>
-                        <div id="btn2" class="text-center"><a href="casas.html"><button>Ver más</button></div></a>
+                        <div id="btn2" class="text-center">
+                            <button onclick="mostrarDetalles('Modelo Americana', './image/modeloamericana1.jpg')">Ver más</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,7 +112,9 @@
                         <h5 class="card-titel text-center">Modelo Minimalista</h5>
                         <p class="text-center">Las casas minimalistas cuentan con un modelo muy amplio y gran iluminación. 
                             De los modelos mas elegidos entre las familias.</p>
-                        <div id="btn2" class="text-center"><a href="casas.html"><button>Ver más</button></div></a>
+                        <div id="btn2" class="text-center">
+                            <button onclick="mostrarDetalles('Modelo Minimalista', './image/modelominimalista1.jpg')">Ver más</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,13 +125,38 @@
                         <h5 class="card-titel text-center">Diseñado por nosotros</h5>
                         <p class="text-center">Las casas diseñadas por nosotros tienen un estilo unico. 
                             Un modelo que brinda comodidad y calidez.</p>
-                        <div id="btn2" class="text-center"><a href="casas.html"><button>Ver más</button></div></a>
+                        <div id="btn2" class="text-center">
+                            <button onclick="mostrarDetalles('Diseñado Nosotros', './image/modelonosotros1.jpg')">Ver más</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- card1 -->
+
+    <div class="modal" tabindex="-1" role="dialog" id="detallesModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Detalles del Modelo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cerrarDetalles()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" id="modalImage" style="max-width: 100%;">
+                    <p id="modalText"></p>
+                </div>
+                <div class="modal-footer">
+                    <div id="btn3">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cerrarDetalles()">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- about -->
     <div id="quieneSomos" class="container">
@@ -235,6 +263,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/faq.js"></script>
+    <script src="/js/casas.js"></script>
+
     
 </body>
 </html>
