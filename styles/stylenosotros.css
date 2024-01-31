@@ -744,7 +744,7 @@
     }
 
     .team-content img {
-        max-width: 50%; /* Hacer que las imágenes sean 100% del ancho de la caja */
+        max-width: 65%; /* Hacer que las imágenes sean 100% del ancho de la caja */
         height: auto;
         border-radius: 5px; /* Reducir el radio de borde de las imágenes */
         margin-bottom: 10px; /* Reducir el margen inferior de las imágenes */
@@ -757,6 +757,4 @@
     #quieneSomos {
         margin-top: -70px;
     }
-    
-
 }
