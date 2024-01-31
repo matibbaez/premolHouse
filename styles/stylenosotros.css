@@ -734,6 +734,7 @@
     /* Cambios para pantallas más pequeñas */
     .team-content {
         grid-template-columns: 1fr;
+        gap: 1.5;
     }
 
     .box {
@@ -746,7 +747,7 @@
         max-width: 50%; /* Hacer que las imágenes sean 100% del ancho de la caja */
         height: auto;
         border-radius: 5px; /* Reducir el radio de borde de las imágenes */
-        margin-bottom: 5px; /* Reducir el margen inferior de las imágenes */
+        margin-bottom: 10px; /* Reducir el margen inferior de las imágenes */
     }
 
     .team {
