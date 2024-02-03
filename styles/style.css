@@ -72,13 +72,6 @@
     background-color: #ff7e4b;
   }
 
-.carousel-control-prev-icon:after {
-    content: ' ';
-}
-
-.carousel-control-next-icon:after {
-    content: ' ';
-}
 /* navbar top */
 .navbar-top{
     width: 100%;
@@ -121,11 +114,7 @@
 
 @media screen and (max-width:491px){
     .icons i img{
-        width: 21px;
-    }
-
-    .icons {
-        display: flex;
+        width: 22px;
     }
 }
 

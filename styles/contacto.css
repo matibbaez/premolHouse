@@ -114,11 +114,7 @@
 
 @media screen and (max-width:491px){
     .icons i img{
-        width: 21px;
-    }
-
-    .icons {
-        display: flex;
+        width: 22px;
     }
 }
 /* navbar top */
