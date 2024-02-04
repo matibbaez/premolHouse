@@ -93,11 +93,6 @@
     }
 } */
 
-.logo h3{
-    font-size: 2rem;
-    font-weight: 700;
-}
-
 .icons{
     text-align: center;
 }
@@ -114,7 +109,7 @@
 
 @media screen and (max-width:491px){
     .icons i img{
-        width: 22px;
+        width: 24px;
     }
 }
 
