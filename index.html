@@ -22,6 +22,19 @@
 </head>
 <body>
 
+    <style>
+        .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+            color: #fff;
+            text-decoration: none;
+            outline: 0;
+            opacity: .3;
+        }
+
+        .carousel-control-next, .carousel-control-prev {
+            opacity: .2;
+        }
+    </style>
+
     <a href="https://api.whatsapp.com/send?phone=541124095220&text=Hola,%20quiero%20hacer%20una%20consulta" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
     </a>
@@ -111,7 +124,7 @@
                         <h5 class="card-titel text-center">Modelo Minimalista</h5>
                         <p class="text-center">Diseño muy amplio y gran iluminación, que le dan un porte elegante.</p>
                         <div id="btn2" class="text-center">
-                            <button>Ver más</button>
+                            <button data-bs-toggle="modal" data-bs-target="#minimalistaModal">Ver más</button>
                         </div>
                     </div>
                 </div>
@@ -123,7 +136,7 @@
                         <h5 class="card-titel text-center">Diseñado por nosotros</h5>
                         <p class="text-center">Están pensadas en brindar originalidad a tu hogar. Incorporanos...</p>
                         <div id="btn2" class="text-center">
-                            <button>Ver más</button>
+                            <button data-bs-toggle="modal" data-bs-target="#nosotrosModal">Ver más</button>
                         </div>
                     </div>
                 </div>
@@ -132,44 +145,116 @@
     </div>
     <!-- card1 --> 
 
-    <!-- Modelo Americana -->
     <div class="modal fade" id="americanaModal" tabindex="-1" aria-labelledby="americanaModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="americanaModalLabel">Modelo Americana</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <h5 class="modal-title" id="americanaModalLabel">Más modelos Americana</h5>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <div class="modal-body">
-                <div id="americanaCarousel" class="carousel slide" data-bs-ride="carousel">
+              <!-- Carousel -->
+              <div id="americanaCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                  <div class="carousel-item active">
                     <img src="./image/modeloamericana1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
+                  </div>
+                  <!-- Agrega más imágenes aquí -->
+                  <div class="carousel-item">
                     <img src="./image/modeloamericana2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./image/modelobessana.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./image/modelonosotros1.jpg" class="d-block w-100" alt="...">
-                    </div>
+                  </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#americanaCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <!-- <span class="visually-hidden">Anterior</span> -->
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#americanaCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <!-- <span class="visually-hidden">Siguiente</span> -->
+                </button>
+                  
+              </div>
+            </div>
+            <div id="btn3" class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <div class="modal fade" id="minimalistaModal" tabindex="-1" aria-labelledby="minimalistaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="minimalistaModalLabel">Modelo Minimalista</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Carousel -->
+              <div id="minimalistaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./image/modelominimalista1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- Agrega más imágenes aquí -->
+                  <div class="carousel-item">
+                    <img src="./image/modelominimalista2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#minimalistaCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#minimalistaCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div id="btn3" class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <!-- Modal para Diseñado por nosotros -->
+    <div class="modal fade" id="nosotrosModal" tabindex="-1" aria-labelledby="nosotrosModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="nosotrosModalLabel">Diseñado por nosotros</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Carousel -->
+                <div id="nosotrosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./image/modelonosotros1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- Agrega más imágenes aquí -->
+                    <div class="carousel-item">
+                    <img src="./image/modelobessana.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#nosotrosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#nosotrosCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
                 </div>
             </div>
+            <div id="btn3" class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
             </div>
         </div>
     </div>
-  
+
     <!-- about -->
     <div id="quieneSomos" class="container">
         <h1 class="text-center" style="margin-top: 50px;">SOBRE NOSOTROS</h1>
